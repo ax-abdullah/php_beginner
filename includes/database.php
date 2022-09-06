@@ -7,7 +7,6 @@
     $connection = mysqli_connect($dbHost, $dbuser, $dbPass, $dbName);
 
     if(!$connection){
-        echo "Database Connection Faild!";
-        die();
+        die("Database Connection Faild!");
     }
 ?>
