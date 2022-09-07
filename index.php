@@ -1,6 +1,9 @@
     <?php
         require_once('includes/header.php');
-
+        // session_start();
+        if(isset($_SESSION['id'])){
+            echo "you are logged in ".$_SESSION['usersession']."<br>";
+        }
         $sql = 'SELECT * FROM users';
         $result = mysqli_query($connection, $sql);
         $rowCount = mysqli_num_rows($result);
